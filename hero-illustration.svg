@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <defs>
+    <!-- Crayon/sketch effect filter -->
+    <filter id="crayon" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="4" result="noise" />
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="3" xChannelSelector="R" yChannelSelector="G" />
+    </filter>
+  </defs>
+
+  <!-- Sky background color is handled by parent, let's keep it transparent -->
+  <g filter="url(#crayon)">
+    <!-- Rainbow in background -->
+    <path d="M120,320 A180,180 0 0,1 480,320" fill="none" stroke="#DCC6FF" stroke-width="24" opacity="0.6" stroke-linecap="round"/>
+    <path d="M140,320 A160,160 0 0,1 460,320" fill="none" stroke="#A7D8FF" stroke-width="16" opacity="0.6" stroke-linecap="round"/>
+    <path d="M160,320 A140,140 0 0,1 440,320" fill="none" stroke="#FF7BAC" stroke-width="12" opacity="0.6" stroke-linecap="round"/>
+
+    <!-- Happy Sun -->
+    <circle cx="500" cy="80" r="30" fill="#FFF7E8" stroke="#243B6B" stroke-width="3"/>
+    <!-- Sunrays -->
+    <line x1="500" y1="40" x2="500" y2="30" stroke="#243B6B" stroke-width="3" stroke-linecap="round"/>
+    <line x1="500" y1="120" x2="500" y2="130" stroke="#243B6B" stroke-width="3" stroke-linecap="round"/>
+    <line x1="460" y1="80" x2="450" y2="80" stroke="#243B6B" stroke-width="3" stroke-linecap="round"/>
+    <line x1="540" y1="80" x2="550" y2="80" stroke="#243B6B" stroke-width="3" stroke-linecap="round"/>
+    <line x1="472" y1="52" x2="465" y2="45" stroke="#243B6B" stroke-width="3" stroke-linecap="round"/>
+    <line x1="528" y1="108" x2="535" y2="115" stroke="#243B6B" stroke-width="3" stroke-linecap="round"/>
+    <line x1="472" y1="108" x2="465" y2="115" stroke="#243B6B" stroke-width="3" stroke-linecap="round"/>
+    <line x1="528" y1="52" x2="535" y2="45" stroke="#243B6B" stroke-width="3" stroke-linecap="round"/>
+    <!-- Sun Face -->
+    <circle cx="490" cy="75" r="2" fill="#243B6B"/>
+    <circle cx="510" cy="75" r="2" fill="#243B6B"/>
+    <path d="M495,85 Q500,90 505,85" fill="none" stroke="#243B6B" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Fluffy Clouds -->
+    <!-- Cloud 1 -->
+    <path d="M60,110 Q80,90 100,105 Q120,85 140,105 Q160,95 170,115 Q180,135 150,140 Q130,145 90,140 Q50,135 60,110 Z" fill="#FFF" stroke="#243B6B" stroke-width="3" stroke-linejoin="round"/>
+    <!-- Cloud 2 -->
+    <path d="M360,130 Q380,110 400,125 Q420,105 440,125 Q460,115 470,135 Q480,155 450,160 Q430,165 390,160 Q350,155 360,130 Z" fill="#FFF" stroke="#243B6B" stroke-width="2.5" stroke-linejoin="round"/>
+
+    <!-- Grassy Hills -->
+    <!-- Back Hill -->
+    <path d="M-50,370 Q180,280 400,340 T850,370 L850,450 L-50,450 Z" fill="#DCC6FF" stroke="#243B6B" stroke-width="3" opacity="0.7"/>
+    <!-- Front Hill -->
+    <path d="M-20,380 Q220,310 500,320 T650,380 L650,450 L-20,450 Z" fill="#6BCB77" stroke="#243B6B" stroke-width="3.5"/>
+
+    <!-- Left Student (Indra - Pink Hoodie, listening/smiling) -->
+    <!-- Body -->
+    <path d="M220,350 Q230,280 250,280 Q270,280 280,350 Z" fill="#FF7BAC" stroke="#243B6B" stroke-width="3"/>
+    <!-- Legs (sitting crossed) -->
+    <path d="M200,350 Q250,370 290,350 Q270,365 210,365 Z" fill="#243B6B" stroke="#243B6B" stroke-width="3" stroke-linejoin="round"/>
+    <!-- Head -->
+    <circle cx="250" cy="240" r="28" fill="#FFF7E8" stroke="#243B6B" stroke-width="3"/>
+    <!-- Hair -->
+    <path d="M220,235 Q240,210 270,220 Q280,235 275,250 C265,225 235,225 220,235 Z" fill="#243B6B" stroke="#243B6B" stroke-width="3" stroke-linejoin="round"/>
+    <!-- Face details -->
+    <circle cx="242" cy="245" r="2" fill="#243B6B"/>
+    <circle cx="258" cy="245" r="2" fill="#243B6B"/>
+    <!-- Blush -->
+    <circle cx="238" cy="250" r="3" fill="#FF7BAC" opacity="0.6"/>
+    <circle cx="262" cy="250" r="3" fill="#FF7BAC" opacity="0.6"/>
+    <!-- Smile -->
+    <path d="M246,252 Q250,257 254,252" fill="none" stroke="#243B6B" stroke-width="2" stroke-linecap="round"/>
+    <!-- Arms -->
+    <path d="M225,295 Q235,320 255,310" fill="none" stroke="#243B6B" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Right Student (Siti - Sky Blue Shirt, sharing/talking) -->
+    <!-- Body -->
+    <path d="M330,350 Q340,275 365,275 Q390,275 400,350 Z" fill="#A7D8FF" stroke="#243B6B" stroke-width="3"/>
+    <!-- Legs -->
+    <path d="M320,350 Q365,370 410,350 Q385,365 330,365 Z" fill="#243B6B" stroke="#243B6B" stroke-width="3" stroke-linejoin="round"/>
+    <!-- Head -->
+    <circle cx="365" cy="235" r="28" fill="#FFF7E8" stroke="#243B6B" stroke-width="3"/>
+    <!-- Hijab/Hair (Let's make it a cute wavy hair) -->
+    <path d="M338,230 Q365,200 392,230 Q398,255 385,260 C375,225 350,225 340,260 Z" fill="#243B6B" stroke="#243B6B" stroke-width="3" stroke-linejoin="round"/>
+    <!-- Face details -->
+    <circle cx="355" cy="240" r="2" fill="#243B6B"/>
+    <circle cx="372" cy="240" r="2" fill="#243B6B"/>
+    <!-- Blush -->
+    <circle cx="351" cy="245" r="3" fill="#FF7BAC" opacity="0.6"/>
+    <circle cx="376" cy="245" r="3" fill="#FF7BAC" opacity="0.6"/>
+    <!-- Happy open mouth -->
+    <path d="M358,248 Q363,254 368,248 Z" fill="#FF7BAC" stroke="#243B6B" stroke-width="2"/>
+    <!-- Arm gesturing -->
+    <path d="M350,295 Q335,295 320,285" fill="none" stroke="#243B6B" stroke-width="3" stroke-linecap="round"/>
+    <!-- Arm holding a heart balloon/doodle string -->
+    <path d="M380,295 Q395,305 400,295" fill="none" stroke="#243B6B" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Conversation Bubble / Cloud between them -->
+    <path d="M275,190 Q295,170 315,190 Q335,190 325,210 Q325,230 305,220 L295,235 L295,220 Q275,220 275,190 Z" fill="#FFF7E8" stroke="#243B6B" stroke-width="2"/>
+    <!-- Mini heart inside speech bubble -->
+    <path d="M300,197 C299,195 296,195 296,197 C296,199 300,202 300,202 C300,202 304,199 304,197 C304,195 301,195 300,197 Z" fill="#FF7BAC"/>
+
+    <!-- Flowers & Leaves Doodles -->
+    <!-- Flower 1 -->
+    <g transform="translate(150, 345)">
+      <circle cx="0" cy="0" r="5" fill="#FFF7E8" stroke="#243B6B" stroke-width="1.5"/>
+      <circle cx="-6" cy="0" r="4" fill="#DCC6FF" stroke="#243B6B" stroke-width="1.5"/>
+      <circle cx="6" cy="0" r="4" fill="#DCC6FF" stroke="#243B6B" stroke-width="1.5"/>
+      <circle cx="0" cy="-6" r="4" fill="#DCC6FF" stroke="#243B6B" stroke-width="1.5"/>
+      <circle cx="0" cy="6" r="4" fill="#DCC6FF" stroke="#243B6B" stroke-width="1.5"/>
+      <path d="M0,8 L0,20" stroke="#243B6B" stroke-width="2"/>
+    </g>
+    <!-- Flower 2 -->
+    <g transform="translate(470, 335)">
+      <circle cx="0" cy="0" r="5" fill="#FFF7E8" stroke="#243B6B" stroke-width="1.5"/>
+      <circle cx="-6" cy="0" r="4" fill="#FF7BAC" stroke="#243B6B" stroke-width="1.5"/>
+      <circle cx="6" cy="0" r="4" fill="#FF7BAC" stroke="#243B6B" stroke-width="1.5"/>
+      <circle cx="0" cy="-6" r="4" fill="#FF7BAC" stroke="#243B6B" stroke-width="1.5"/>
+      <circle cx="0" cy="6" r="4" fill="#FF7BAC" stroke="#243B6B" stroke-width="1.5"/>
+      <path d="M0,8 L0,20" stroke="#243B6B" stroke-width="2"/>
+    </g>
+    
+    <!-- Floating Hearts and Sparkles -->
+    <!-- Heart 1 -->
+    <path d="M200,170 C198,165 192,165 192,170 C192,175 200,180 200,180 C200,180 208,175 208,170 C208,165 202,165 200,170 Z" fill="#FF7BAC" stroke="#243B6B" stroke-width="1.5" transform="rotate(-15, 200, 170)"/>
+    <!-- Heart 2 -->
+    <path d="M430,200 C428,195 422,195 422,200 C422,205 430,210 430,210 C430,210 438,205 438,200 C438,195 432,195 430,200 Z" fill="#6BCB77" stroke="#243B6B" stroke-width="1.5" transform="rotate(15, 430, 200)"/>
+    
+    <!-- Sparkle star -->
+    <path d="M120,70 L123,76 L130,77 L125,82 L126,88 L120,85 L114,88 L115,82 L110,77 L117,76 Z" fill="#FFF7E8" stroke="#243B6B" stroke-width="1.5"/>
+  </g>
+</svg>
